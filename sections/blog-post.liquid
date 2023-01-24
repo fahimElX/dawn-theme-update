@@ -1,12 +1,13 @@
 <section class="section-wrapper-{{ section.id }}">
 
-
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
       <div class="blog-title-{{ block.id }}">{{ block.settings.text-content }}</div>
       {% when 'spacer-block' %}
-      <div class="spacer-{{ block.id }}"></div>
+      <div class="spacer-{{ block.id }}">
+
+      </div>
     {% endcase %}
 
   {% endfor %}
@@ -17,14 +18,13 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
-      .blog-title-{{ block.id }}{
+      .blog-title-{{ block.id }} {
         margin: 0 auto;
         max-width: 600px;
       }
-      {% when  'spacer-block' %}
-      .section-wrapper-{{ section.id }}.spacer-{{ block.id }}{
-        height: {{ block.settings.spacer-height }}
-        px;
+      {% when 'spacer-block' %}
+      .section-wrapper-{{ section.id }} .spacer-{{ block.id }} {
+        height: {{ block.settings.spacer-height }}px;
       }
     {% endcase %}
   {% endfor %}
