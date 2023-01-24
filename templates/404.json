@@ -6,22 +6,22 @@
       "settings": {
       }
     },
-    "6d385c4c-b6d8-497b-911e-f423c0498c31": {
+    "6f4f9265-51a4-4278-a96b-9a80b48aff6b": {
       "type": "blog-post",
       "blocks": {
-        "668db044-7893-4bb0-9cc8-3c8ba7d63d20": {
+        "5b48fefb-d2d4-4fa8-8313-bc813197c547": {
           "type": "text-block",
           "settings": {
             "text-content": "<p>Journal Title, It's A Pretty Long One Too. <\/p>"
           }
         },
-        "8c6d6482-66ad-4bff-9572-1cd6cdfcc5fb": {
+        "2f53fd18-3540-4775-84b3-15d3163a9f7d": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 90
+            "spacer-height": 85
           }
         },
-        "28b88caa-a82a-44b9-acd4-a6ba15cb0970": {
+        "299add09-53bc-4d4e-a319-608704481566": {
           "type": "text-block",
           "settings": {
             "text-content": "<p>Journal Title, It's A Pretty Long One Too. <\/p>"
@@ -29,9 +29,9 @@
         }
       },
       "block_order": [
-        "668db044-7893-4bb0-9cc8-3c8ba7d63d20",
-        "8c6d6482-66ad-4bff-9572-1cd6cdfcc5fb",
-        "28b88caa-a82a-44b9-acd4-a6ba15cb0970"
+        "5b48fefb-d2d4-4fa8-8313-bc813197c547",
+        "2f53fd18-3540-4775-84b3-15d3163a9f7d",
+        "299add09-53bc-4d4e-a319-608704481566"
       ],
       "settings": {
       }
@@ -39,6 +39,6 @@
   },
   "order": [
     "main",
-    "6d385c4c-b6d8-497b-911e-f423c0498c31"
+    "6f4f9265-51a4-4278-a96b-9a80b48aff6b"
   ]
 }
