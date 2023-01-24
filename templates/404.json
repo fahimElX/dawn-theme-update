@@ -6,72 +6,39 @@
       "settings": {
       }
     },
-    "b163e4fa-b461-4ce5-bc84-fe620dc9225c": {
-      "type": "image-with-text",
-      "disabled": true,
+    "b829060a-d1b0-499a-8aba-b1f6653f7c77": {
+      "type": "blog-post",
       "blocks": {
-        "f8e82258-1af1-4e2f-8725-19569c8a2005": {
-          "type": "heading",
+        "c16db24a-5348-401a-841b-5693bff99336": {
+          "type": "text-block",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "text-content": "<p>Journal Title, It's A Pretty Long One Too. <\/p>"
           }
         },
-        "template--17697506230579__b163e4fa-b461-4ce5-bc84-fe620dc9225c-1674212563ce38c5bb-1": {
-          "type": "text",
+        "483f63d2-8580-4c62-92bc-bffd4cd8b40f": {
+          "type": "spacer-block",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "spacer-height": 70
           }
         },
-        "template--17697506230579__b163e4fa-b461-4ce5-bc84-fe620dc9225c-1674212563ce38c5bb-2": {
-          "type": "button",
+        "2a9be605-ae98-4a8f-a9c1-aa0230fa702f": {
+          "type": "text-block",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text-content": "<p>Journal Title, It's A Pretty Long One Too. <\/p>"
           }
         }
       },
       "block_order": [
-        "f8e82258-1af1-4e2f-8725-19569c8a2005",
-        "template--17697506230579__b163e4fa-b461-4ce5-bc84-fe620dc9225c-1674212563ce38c5bb-1",
-        "template--17697506230579__b163e4fa-b461-4ce5-bc84-fe620dc9225c-1674212563ce38c5bb-2"
+        "c16db24a-5348-401a-841b-5693bff99336",
+        "483f63d2-8580-4c62-92bc-bffd4cd8b40f",
+        "2a9be605-ae98-4a8f-a9c1-aa0230fa702f"
       ],
       "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "e33cc280-b8da-4202-83de-09b6bab10835": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "news",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "b163e4fa-b461-4ce5-bc84-fe620dc9225c",
-    "e33cc280-b8da-4202-83de-09b6bab10835"
+    "b829060a-d1b0-499a-8aba-b1f6653f7c77"
   ]
 }
