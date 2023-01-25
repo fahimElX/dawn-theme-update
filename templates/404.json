@@ -5,40 +5,9 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "b829060a-d1b0-499a-8aba-b1f6653f7c77": {
-      "type": "blog-post",
-      "blocks": {
-        "c16db24a-5348-401a-841b-5693bff99336": {
-          "type": "text-block",
-          "settings": {
-            "text-content": "<p><strong>Journal Title, It's A Pretty Long One Too. <\/strong><\/p>"
-          }
-        },
-        "483f63d2-8580-4c62-92bc-bffd4cd8b40f": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 15
-          }
-        },
-        "2a9be605-ae98-4a8f-a9c1-aa0230fa702f": {
-          "type": "text-block",
-          "settings": {
-            "text-content": "<p>Journal Title, It's A Pretty Long One Too. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "c16db24a-5348-401a-841b-5693bff99336",
-        "483f63d2-8580-4c62-92bc-bffd4cd8b40f",
-        "2a9be605-ae98-4a8f-a9c1-aa0230fa702f"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "b829060a-d1b0-499a-8aba-b1f6653f7c77"
+    "main"
   ]
 }
