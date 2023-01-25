@@ -3,10 +3,17 @@
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'text-block' %}
-      <div class="blog-title-{{ block.id }}">{{ block.settings.text-content }}</div>
+      <div class="blog-title-{{ block.id }}">
+        <p>{{ block.settings.text-content }}</p>
+      </div>
+      
       {% when 'spacer-block' %}
       <div class="spacer-{{ block.id }}">
 
+      </div>
+      {% when 'blog-content' %}
+      <div class="blog-descripition-{{ block.id }}">
+        <p>{{ block.settings.blog-description }}</p>
       </div>
     {% endcase %}
 
@@ -22,6 +29,19 @@
         margin: 0 auto;
         max-width: 600px;
       }
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      .blog-title-{{ block.id }} p{
+        font-size: {{block.settings.font-size}}px;
+      }
+      .blog-title-{{ block.id }} p{
+        text-align: {{block.settings.text_alignment}};
+      }
+      .blog-title-{{ block.id }} p{
+        font-family: {{block.settings.heading-font}};
+      }
       {% when 'spacer-block' %}
       .section-wrapper-{{ section.id }} .spacer-{{ block.id }} {
         height: {{ block.settings.spacer-height }}px;
@@ -32,7 +52,7 @@
 
 {% schema %}
   {
-    "name": "blog post",
+    "name": "New Blog Post",
     "class": "section-blog-post",
     "blocks": [
       {
@@ -40,10 +60,45 @@
         "type": "text-block",
         "settings": [
           {
-            "type": "richtext",
+            "type": "textarea",
             "id": "text-content",
             "label": "Add Blog Title",
-            "default": "<p>Journal Title, It's A Pretty Long One Too. </p>"
+            "default": "Journal Title, It's A Pretty Long One Too."
+          }, 
+          {
+            "type": "font",
+            "id": "heading-font",
+            "label": "Heading font"
+          }, 
+          {
+            "type": "range",
+            "id": "font-size",
+            "label": "Font Size",
+            "min": 12,
+            "max": 60,
+            "step": 2,
+            "unit": "px",
+            "default": 20
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Align Text",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
           }
         ]
       }, {
@@ -66,7 +121,7 @@
     "presets": [
       {
         "category": "content",
-        "name": "blog post"
+        "name": "New Blog Post"
       }
     ]
   }
