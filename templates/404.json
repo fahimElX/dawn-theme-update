@@ -5,9 +5,80 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "0ee4df0f-ed98-46bd-a51f-e2953dda91fc": {
+      "type": "blog-post",
+      "blocks": {
+        "6ed03b79-12f0-4507-b1c0-2143b901ff96": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "Journal Title, It's A Pretty Long One Too.",
+            "heading-font": "'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Lucida, Helvetica, Arial, sans-serif",
+            "font-size": 48,
+            "text_alignment": "center"
+          }
+        },
+        "9a57056b-4399-475f-b44d-6dcf2012ebe1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 80
+          }
+        },
+        "5f7659a8-77bf-432a-a4f7-87599041c669": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.",
+            "heading-font": "Georgia, Utopia, 'Times New Roman', Times, serif",
+            "font-size": 24,
+            "text_alignment": "left"
+          }
+        },
+        "e47d05fe-c91c-4d82-be38-02af7055cfd5": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 40
+          }
+        },
+        "00e0744b-6e99-41cc-868e-0cc5fc2579c2": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero.",
+            "heading-font": "'Times New Roman', Times, serif",
+            "font-size": 16,
+            "text_alignment": "left"
+          }
+        },
+        "9f063608-4267-4660-a295-05b090169439": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 40
+          }
+        },
+        "0ccd07ea-7890-4f18-9300-e0f4f2eba52b": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.",
+            "heading-font": "'Times New Roman', Times, serif",
+            "font-size": 16,
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "6ed03b79-12f0-4507-b1c0-2143b901ff96",
+        "9a57056b-4399-475f-b44d-6dcf2012ebe1",
+        "5f7659a8-77bf-432a-a4f7-87599041c669",
+        "e47d05fe-c91c-4d82-be38-02af7055cfd5",
+        "00e0744b-6e99-41cc-868e-0cc5fc2579c2",
+        "9f063608-4267-4660-a295-05b090169439",
+        "0ccd07ea-7890-4f18-9300-e0f4f2eba52b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "0ee4df0f-ed98-46bd-a51f-e2953dda91fc"
   ]
 }
