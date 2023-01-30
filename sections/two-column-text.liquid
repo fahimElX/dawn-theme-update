@@ -3,26 +3,66 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'first-column-text' %}
-        <div class="first-column-{{ block.id }}"></div>
+        <div class="first-column-{{ block.id }}">
+          <p> {{ block.settings.text-content }}</p>
+        </div>
         {% when 'second-column-text' %}
+        <div class="second-column-{{ block.id }}">
+          <p> {{ block.settings.text-content }}</p>
+        </div>
+        {% when 'spacer-block' %}
+        <div class="spacer-{{ block.id }}">
 
-
+        </div>
       {% endcase %}
     {% endfor %}
-
-    <div class="second-column-{{ block.id }}"></div>
   </div>
 </section>
 
 <style>
-  .column-wrapper-{{ block.id }}{
+  .section-wrapper-{{ section.id }} {
+    background: {{ section.settings.bg-color }};
+  }
+  .column-wrapper{
     display: flex;
   }
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'first-column-text' %}
+        .first-column-{{ block.id }} p{
+          font-family: {{ block.settings.heading-font }};
+          font-size: {{ block.settings.font-size }}px;
+          width: {{ block.settings.width }}%;
+          text-align: {{ block.settings.text_alignment }};
+          padding: 0 10px;
+        }
+      {% when 'second-column-text' %}
+        .second-column-{{ block.id }} p{
+          font-family: {{ block.settings.heading-font }};
+          font-size: {{ block.settings.font-size }}px;
+          width: {{ block.settings.width }}%;
+          text-align: {{ block.settings.text_alignment }};
+          padding: 0 10px;
+        }
+        {% when 'spacer-block' %}
+        .spacer-{{ block.id }} {
+          width: {{ block.settings.spacer-width }}px;
+        }
+    {% endcase %}
+  {% endfor %}
 </style>
 
 {% schema %}
   {
     "name": "Two Column Section",
+    "settings": [
+      {  
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color",
+        "default": "#FFF"
+      }
+    ],
     "blocks": [
       {
         "name": "first-column-text",
@@ -36,7 +76,47 @@
           }, {
             "type": "font",
             "id": "heading-font",
-            "label": "Heading font"
+            "label": "Text Font"
+          },
+          {
+            "type": "range",
+            "id": "font-size",
+            "label": "Font Size",
+            "min": 12,
+            "max": 60,
+            "step": 2,
+            "unit": "px",
+            "default": 20
+          },
+          {
+            "type": "range",
+            "id": "width",
+            "label": "Width",
+            "min": 25,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 100
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Align Text",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
           }
         ]
       }, 
@@ -52,7 +132,62 @@
           }, {
             "type": "font",
             "id": "heading-font",
-            "label": "Heading font"
+            "label": "Text font"
+          },
+          {
+            "type": "range",
+            "id": "font-size",
+            "label": "Font Size",
+            "min": 12,
+            "max": 60,
+            "step": 2,
+            "unit": "px",
+            "default": 20
+          },{
+            "type": "range",
+            "id": "width",
+            "label": "Width",
+            "min": 25,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 100
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Align Text",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+          }
+        ]
+      },
+      {
+        "type": "spacer-block",
+        "name": "Spacer",
+        "settings": [
+          {
+            "type": "range",
+            "id": "spacer-width",
+            "label": "Spacer Width",
+            "min": 0,
+            "max": 60,
+            "step": 5,
+            "unit": "px",
+            "default": 10
           }
         ]
       }
