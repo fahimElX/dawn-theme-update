@@ -96,6 +96,12 @@
             "text_alignment": "left"
           }
         },
+        "dc5e85ea-196f-44d0-8af6-33f42e564705": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-width": 30
+          }
+        },
         "6112f4a1-d899-4fb0-a1c2-8890ca7457f8": {
           "type": "second-column-text",
           "settings": {
@@ -109,6 +115,7 @@
       },
       "block_order": [
         "10395c3e-9f34-456f-9280-21f81def4414",
+        "dc5e85ea-196f-44d0-8af6-33f42e564705",
         "6112f4a1-d899-4fb0-a1c2-8890ca7457f8"
       ],
       "settings": {
