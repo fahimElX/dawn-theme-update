@@ -95,10 +95,21 @@
             "width": 100,
             "text_alignment": "left"
           }
+        },
+        "6112f4a1-d899-4fb0-a1c2-8890ca7457f8": {
+          "type": "second-column-text",
+          "settings": {
+            "text-content": "Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Sed eleifend arcu vel porta cursus. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Quisque a mattis turpis. Sed nisl purus, malesuada.",
+            "heading-font": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
+            "font-size": 16,
+            "width": 100,
+            "text_alignment": "left"
+          }
         }
       },
       "block_order": [
-        "10395c3e-9f34-456f-9280-21f81def4414"
+        "10395c3e-9f34-456f-9280-21f81def4414",
+        "6112f4a1-d899-4fb0-a1c2-8890ca7457f8"
       ],
       "settings": {
         "bg-color": "#FFF"
