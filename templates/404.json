@@ -57,10 +57,10 @@
         "80e51a6a-8122-49cd-b4e5-d088054eedc0": {
           "type": "text-block",
           "settings": {
-            "text-content": "Journal Title, It's A Pretty Long One Too.",
-            "heading-font": "Helvetica, Arial, sans-serif",
-            "font-size": 20,
-            "text_alignment": "center"
+            "text-content": "Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.",
+            "heading-font": "'Times New Roman', Times, serif",
+            "font-size": 16,
+            "text_alignment": "left"
           }
         },
         "9c61e557-12f7-47a3-9c18-36ba7e9b6351": {
