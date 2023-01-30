@@ -36,16 +36,16 @@
         "1486c881-3459-4453-9f2f-7868083c05de": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 30
+            "spacer-height": 40
           }
         },
         "93bc757c-d5d5-43ba-b020-f224baff0fb6": {
           "type": "text-block",
           "settings": {
-            "text-content": "Journal Title, It's A Pretty Long One Too.",
-            "heading-font": "Helvetica, Arial, sans-serif",
-            "font-size": 20,
-            "text_alignment": "center"
+            "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero.",
+            "heading-font": "'Times New Roman', Times, serif",
+            "font-size": 16,
+            "text_alignment": "left"
           }
         },
         "a8eda9a7-3c07-4092-86d5-8b63a966c9d3": {
