@@ -27,10 +27,10 @@
         "537c17c9-36de-45c3-b8da-f2fdb97f07bb": {
           "type": "text-block",
           "settings": {
-            "text-content": "Journal Title, It's A Pretty Long One Too.",
-            "heading-font": "Helvetica, Arial, sans-serif",
-            "font-size": 20,
-            "text_alignment": "center"
+            "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.",
+            "heading-font": "Verdana, Helvetica, Arial, sans-serif",
+            "font-size": 24,
+            "text_alignment": "left"
           }
         },
         "1486c881-3459-4453-9f2f-7868083c05de": {
