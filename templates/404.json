@@ -82,10 +82,32 @@
       ],
       "settings": {
       }
+    },
+    "588957b0-e117-4ace-b36c-d089cc7389fa": {
+      "type": "two-column-text",
+      "blocks": {
+        "10395c3e-9f34-456f-9280-21f81def4414": {
+          "type": "first-column-text",
+          "settings": {
+            "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.",
+            "heading-font": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
+            "font-size": 16,
+            "width": 100,
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "10395c3e-9f34-456f-9280-21f81def4414"
+      ],
+      "settings": {
+        "bg-color": "#FFF"
+      }
     }
   },
   "order": [
     "main",
-    "cb70d161-a1eb-4ebd-85b9-34a46e736845"
+    "cb70d161-a1eb-4ebd-85b9-34a46e736845",
+    "588957b0-e117-4ace-b36c-d089cc7389fa"
   ]
 }
