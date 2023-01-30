@@ -1,0 +1,69 @@
+<section class="section-wrapper-{{ section.id }}">
+  <div class="column-wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'first-column-text' %}
+        <div class="first-column-{{ block.id }}"></div>
+        {% when 'second-column-text' %}
+
+
+      {% endcase %}
+    {% endfor %}
+
+    <div class="second-column-{{ block.id }}"></div>
+  </div>
+</section>
+
+<style>
+  .column-wrapper-{{ block.id }}{
+    display: flex;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Two Column Section",
+    "blocks": [
+      {
+        "name": "first-column-text",
+        "type": "first-column-text",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "text-content",
+            "label": "Add Blog Title",
+            "default": "Journal Title, It's A Pretty Long One Too."
+          }, {
+            "type": "font",
+            "id": "heading-font",
+            "label": "Heading font"
+          }
+        ]
+      }, 
+      {
+        "name": "second-column-text",
+        "type": "second-column-text",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "text-content",
+            "label": "Add Blog Title",
+            "default": "Journal Title, It's A Pretty Long One Too."
+          }, {
+            "type": "font",
+            "id": "heading-font",
+            "label": "Heading font"
+          }
+        ]
+      }
+    ],
+
+
+    "presets": [
+      {
+        "category": "content",
+        "name": "Two Column Section"
+      }
+    ]
+  }
+{% endschema %}

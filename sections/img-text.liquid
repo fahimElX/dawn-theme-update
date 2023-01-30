@@ -1,0 +1,44 @@
+<section class="section-wrapper-{{ section.id }}">
+    
+</section>
+
+<style>
+
+</style>
+
+{% schema %}
+  {
+    "name": "Image With Text",
+    "blocks": [
+      {
+        "name": "image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "select",
+            "id": "image-size",
+            "label": "Image Size",
+            "options": [
+              {
+                "value": "600",
+                "label": "Small"
+              }, {
+                "value": "967",
+                "label": "Medium"
+              }, {
+                "value": "1200",
+                "label": "Large"
+              }
+            ],
+            "default": "600"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image With Text"
+      }
+    ]
+  }
+{% endschema %}
