@@ -1,4 +1,4 @@
-<section class="section-wrapper-{{ section.id }}">
+<div class="section-wrapper-{{ section.id }}">
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'image' %}
@@ -14,7 +14,7 @@
       </div>
     {% endcase %}
   {% endfor %}
-</section>
+</div>
 
 <style>
   .section-wrapper-{{ section.id }} {
