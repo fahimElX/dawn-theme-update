@@ -92,7 +92,7 @@
             "text-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.",
             "heading-font": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
             "font-size": 16,
-            "width": 100,
+            "width": 85,
             "text_alignment": "left"
           }
         },
@@ -108,7 +108,7 @@
             "text-content": "Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Sed eleifend arcu vel porta cursus. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Quisque a mattis turpis. Sed nisl purus, malesuada.",
             "heading-font": "Palatino, 'Palatino Linotype', 'Book Antiqua', serif",
             "font-size": 16,
-            "width": 100,
+            "width": 85,
             "text_alignment": "left"
           }
         }
