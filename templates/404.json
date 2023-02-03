@@ -156,12 +156,48 @@
       "settings": {
         "section-width": "600"
       }
+    },
+    "3ff423f1-a6d0-4106-9822-496795e5d008": {
+      "type": "img-text",
+      "blocks": {
+        "044f09f8-7209-4bb8-a22a-06155296bdf9": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 40
+          }
+        },
+        "64469782-9c37-4df5-a497-6421a72fbdc4": {
+          "type": "image",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
+            "image-size": "967"
+          }
+        },
+        "0b5f9efe-2f96-493f-bd44-f779b3d4d8a0": {
+          "type": "text-block",
+          "settings": {
+            "caption": "<p>Model wears <span style=\"text-decoration:underline\">Whiting Shirt Cosmic Papaya Check<\/span> with <span style=\"text-decoration:underline\">Dean T Shirt Black<\/span> and <span style=\"text-decoration:underline\">Pleat Trousers Black<\/span><\/p>",
+            "heading-font": "'Times New Roman', Times, serif",
+            "font-size": 12,
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "044f09f8-7209-4bb8-a22a-06155296bdf9",
+        "64469782-9c37-4df5-a497-6421a72fbdc4",
+        "0b5f9efe-2f96-493f-bd44-f779b3d4d8a0"
+      ],
+      "settings": {
+        "section-width": "967"
+      }
     }
   },
   "order": [
     "main",
     "cb70d161-a1eb-4ebd-85b9-34a46e736845",
     "588957b0-e117-4ace-b36c-d089cc7389fa",
-    "588d1da1-d8a7-4393-966e-d1516468be52"
+    "588d1da1-d8a7-4393-966e-d1516468be52",
+    "3ff423f1-a6d0-4106-9822-496795e5d008"
   ]
 }
