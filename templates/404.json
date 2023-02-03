@@ -191,6 +191,31 @@
       "settings": {
         "section-width": "967"
       }
+    },
+    "9bdddbd8-d7e7-481f-9640-ac6b6f3d17a7": {
+      "type": "img-text",
+      "blocks": {
+        "b4b00401-0ae8-4006-858d-78506f0acde7": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 40
+          }
+        },
+        "198d4555-28fd-4fd9-8dc0-ab2dbaefc08e": {
+          "type": "image",
+          "settings": {
+            "image_with_text_image": "shopify:\/\/shop_images\/04-10-2022-WAX1465-Square.jpg",
+            "image-size": "600"
+          }
+        }
+      },
+      "block_order": [
+        "b4b00401-0ae8-4006-858d-78506f0acde7",
+        "198d4555-28fd-4fd9-8dc0-ab2dbaefc08e"
+      ],
+      "settings": {
+        "section-width": "1200"
+      }
     }
   },
   "order": [
@@ -198,6 +223,7 @@
     "cb70d161-a1eb-4ebd-85b9-34a46e736845",
     "588957b0-e117-4ace-b36c-d089cc7389fa",
     "588d1da1-d8a7-4393-966e-d1516468be52",
-    "3ff423f1-a6d0-4106-9822-496795e5d008"
+    "3ff423f1-a6d0-4106-9822-496795e5d008",
+    "9bdddbd8-d7e7-481f-9640-ac6b6f3d17a7"
   ]
 }
