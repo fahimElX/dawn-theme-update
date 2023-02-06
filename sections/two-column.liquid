@@ -1,34 +1,138 @@
-<section class="section-wrapper-{{ section.id }}">
+<div class="section-wrapper-{{ section.id }}">
     {% for block in section.blocks %}
         {% case block.type %}
-            {% when "" %}
-                  
+            {% when "first-column" %}
+            <div class="first-column-{{ block.id }}">
+                <img src="{{ block.settings.image | img_url:"master"}}" alt="Model image">
+            </div>
+
+            {% when "second-column" %}
+            <div class="second-column-{{ block.id }}">
+                <img src="{{ block.settings.image | img_url:"master"}}" alt="Model image">
+            </div>
+
         {% endcase %}
     {% endfor %}
-</section>
+</div>
 
 <style>
     .section-wrapper-{{ section.id }} {
+        width: 600px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: {{ section.settings.gap }}px;
+        padding: 40px 0;
     }
     {% for block in section.blocks %}
         {% case block.type %}
-            {% when "" %}
-                
+            {% when "first-column" %}
+                .first-column-{{ block.id }} img{
+                    width: {{ block.settings.image-width }}px;
+                }
+            {% when "second-column" %}
+                .second-column-{{ block.id }} img{
+                    width: {{ block.settings.image-width }}px;
+                }
            
-                
         {% endcase %}
     {% endfor %}
 </style>
 
 {% schema %}
     {
-        "name": "Two Column Section",
+        "name": "Two Column Image Content",
+        "tag": "section",
+        "settings": [
+            {
+                "type": "range",
+                "id": "gap",
+                "min": 0,
+                "max": 80,
+                "step": 1,
+                "unit": "px",
+                "label": "Gap",
+                "default": 0
+            }
+        ],
         "blocks": [
-            
-        ]
+            {
+                "name": "first-column",
+                "type": "first-column",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "select",
+                        "id": "image-width",
+                        "label": "Image Width",
+                        "options": [
+                            {
+                            "value": "230",
+                            "label": "Small"
+                            },
+                            {
+                            "value": "300",
+                            "label": "Medium"
+                            },
+                            {
+                            "value": "372",
+                            "label": "Large"
+                            },
+                            {
+                            "value": "484",
+                            "label": "Extra Large"
+                            }
+                        ],
+                        "default": "300"
+                }
 
+                ]
+            },
+            {
+                "name": "second-column",
+                "type": "second-column",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "select",
+                        "id": "image-width",
+                        "label": "Image Width",
+                        "options": [
+                            {
+                            "value": "230",
+                            "label": "Small"
+                            },
+                            {
+                            "value": "300",
+                            "label": "Medium"
+                            },
+                            {
+                            "value": "372",
+                            "label": "Large"
+                            },
+                            {
+                            "value": "484",
+                            "label": "Extra Large"
+                            }
+                        ],
+                        "default": "300"
+                }
+                ]
+            }
+        ],
+        "presets": [
+            {
+              "name": "Two Column Image Content"
+            }
+    ]
     }
 {% endschema %}
