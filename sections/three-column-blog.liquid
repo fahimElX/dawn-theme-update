@@ -1,0 +1,423 @@
+<div  class="our-causes-section-wrapper-{{ section.id }}">
+    {% for block in section.blocks %}
+        {% case block.type %}
+        {% when "Heading-and-Text" %}
+            <div class="our-causes-wrapper-{{ block.id }}">
+                <div class="header-and-description-{{ block.id }}">
+                    <div class="first-heading-wrapper-{{ block.id }}">
+                        {{ block.settings.heading | replace: '<p', '<p class="first-heading"' }}
+                    </div>
+                    <div class="first-description-wrapper-{{ block.id }}">
+                        {{ block.settings.description | replace: '<p', '<p class="first-description"' }}
+                    </div>
+                </div>
+            </div>
+        {% when "Heading-Subheading-text" %}
+            <div class="our-causes-wrapper-{{ block.id }}">
+                <div class="header-subheader-description-{{ block.id }} ">
+                    <div class="secondary-heading-wrapper-{{ block.id }}">
+                        {{ block.settings.heading | replace: '<p', "<p class='secondary-heading'" }}
+                    </div>
+                    <div class="subheading-wrapper-{{ block.id }}">
+                        {{ block.settings.subheader | replace: '<p', '<p class="subheading"' }}
+                    </div>
+                    <div class="secondary-description-wrapper-{{ block.id }}">
+                        {{ block.settings.description | replace: '<p', '<p class="secondary-description"' }}
+                    </div>
+                </div>
+            </div>
+        {% endcase %}
+    {% endfor %}
+</div>
+
+<style>
+    .our-causes-section-wrapper-{{ section.id }}{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 70px;
+        padding-right: 110px;
+    }
+    {% for block in section.blocks %}
+    {% case block.type %}
+    {%- when "Heading-and-Text" -%}   
+        .our-causes-wrapper-{{ block.id }}{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width:33.3%
+        }
+        .header-and-description-{{ block.id }}{
+            padding-right: 55px;
+            padding-left: 25px;
+            padding-top: 114px;
+        }
+        .header-and-description-{{ block.id }} p{
+            margin: 0;
+            {% comment %} padding-top: 10px; {% endcomment %}
+        }
+        .first-heading{
+            font-size: {{ block.settings.heading-font-size | append: "px" }};
+            font-family: {{ block.settings.font }};
+            color: {{ block.settings.text-color }};
+            line-height: {{ block.settings.line-height | append: "px" }};
+        }
+        .first-description {
+            font-size: {{ block.settings.description-font-size | append: "px" }};
+            font-family: {{ block.settings.font }};
+            color: {{ block.settings.text-color }};
+            line-height: 28px;
+        }
+        .first-heading-wrapper-{{ block.id }}{
+            min-height: 80px;
+        }
+        .first-description-wrapper-{{ block.id }}{
+            min-height: 400px;
+        }
+        @media screen and  (max-width:992px){
+            div.our-causes-wrapper-{{ block.id }}{
+                border: none;
+            }
+            div.our-causes-wrapper-{{ block.id }}{
+                width: 50%;
+            }
+            div.our-causes-section-wrapper-{{ section.id }}{
+                padding: 10px 15px;
+                justify-content: space-between;
+            }
+            .header-and-description-{{ block.id }}{
+                padding-right: 0px;
+                padding-left: 0px;
+            } 
+        }
+               
+        @media screen and  (max-width:575px){
+            div.our-causes-wrapper-{{ block.id }}{
+                border: none;
+            }
+            div.our-causes-wrapper-{{ block.id }}{
+                width: 100%;
+            }
+            div.our-causes-section-wrapper-{{ section.id }}{
+                padding: 10px 15px
+            }
+            .header-and-description-{{ block.id }}{
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+    {% when "Heading-Subheading-text" %}
+        .our-causes-wrapper-{{ block.id }}{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 33.3%;
+            height: 700px;
+        }
+         {% if block.settings.border-left == true %}
+            .our-causes-wrapper-{{ block.id }}{
+                border-left: 0.25px solid rgba(43, 39, 37, 0.3);
+            }
+        {% endif %}
+
+        {% if block.settings.border-right == true %}
+            .our-causes-wrapper-{{ block.id }}{
+                border-right: 0.25px solid rgba(43, 39, 37, 0.3);
+            }
+         {% endif %}
+        {% if  block.settings.border-top == true %}
+            .our-causes-wrapper-{{ block.id }}{
+                border-top: 0.25px solid rgba(43, 39, 37, 0.3);
+            }
+         {% endif %}
+        {% if  block.settings.border-bottom == true %}
+            .our-causes-wrapper-{{ block.id }}{
+                border-bottom: 0.25px solid rgba(43, 39, 37, 0.3);
+            }
+        {% endif %}
+        .header-subheader-description-{{ block.id }} .secondary-heading{
+            font-size: {{ block.settings.heading-font-size | append: "px" }};
+            font-family: {{ block.settings.font }};
+            color: {{ block.settings.text-color }};
+            line-height: {{ block.settings.line-height }}px;
+        }
+        .header-subheader-description-{{ block.id }} .subheading{
+            font-size: {{ block.settings.subheader-font-size | append: "px" }};
+            font-family: {{ block.settings.font }};
+            color: {{ block.settings.text-color }};
+            line-height: {{ block.settings.line-height }}px;
+        }
+        .header-subheader-description-{{ block.id }} .secondary-description {
+            font-size: {{ block.settings.description-font-size | append: "px" }};
+            font-family: {{ block.settings.font }};
+            color: {{ block.settings.text-color }};
+            line-height: {{ block.settings.line-height }}px;
+        }
+        .header-subheader-description-{{ block.id }}{
+            padding-top: {{ block.settings.padding-top }}px;
+            padding-left: {{ block.settings.padding-left }}px;
+            padding-right: {{ block.settings.padding-right }}px;
+        }
+        .header-subheader-description-{{ block.id }} p{
+            margin: 0;
+        }
+        .secondary-heading-wrapper-{{ block.id }}, .subheading-wrapper-{{ block.id }}{
+            min-height: 40px;
+        }
+        .secondary-description-wrapper-{{ block.id }}{
+            min-height: 400px
+        }
+        @media screen and  (max-width: 992px){
+            .our-causes-wrapper-{{ block.id }}{
+                width:50%
+            }
+            div.our-causes-section-wrapper-{{ section.id }}{
+                padding: 10px 15px;
+                justify-content: space-between;
+            }
+            div.our-causes-wrapper-{{ block.id }}{
+                border: none;
+            }
+        }
+          @media screen and  (max-width: 575px){
+            .our-causes-wrapper-{{ block.id }}{
+                width:100%
+            }
+            div.our-causes-section-wrapper-{{ section.id }}{
+                padding: 10px 15px
+            }
+            div.header-subheader-description-{{ block.id }}{
+                padding-top: 114px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            div.our-causes-wrapper-{{ block.id }}{
+                border: none;
+            }
+        }
+    {%- when 'spacer-block' -%}
+        .spacer-{{ block.id }}{
+            height: {{ block.settings.spacer-height }}px;
+        }
+    {% endcase %}
+    {% endfor %}
+</style>
+
+
+{% schema %} 
+{
+    "name": "Three-Column-Blog",
+    "blocks": [
+        {
+            "name" : "Heading-and-Text",
+            "type" : "Heading-and-Text",
+            "settings" :[
+                {
+                    "type": "richtext",
+                    "id" : "heading",
+                    "label" : "Heading",
+                    "default": "<p>Our Causes</p>"
+                },
+                {
+                    "type": "richtext",
+                    "id" : "description",
+                    "label" : "Description",
+                    "default": "<p></p>"
+                },
+                {
+                    "type": "range",
+                    "id": "heading-font-size",
+                    "label": "Heading Font Size",
+                    "min": 12,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 70
+                },
+                {
+                    "type": "range",
+                    "id": "description-font-size",
+                    "label": "Description Font Size",
+                    "min": 12,
+                    "max": 50,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 16
+                },
+                {
+                    "type": "range",
+                    "id": "line-height",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 50,
+                    "label": "Line height"
+                },
+
+                {
+                    "type": "font",
+                    "id" : "font",
+                    "label": "Font-Family"
+                },
+                {
+                    "type": "color",
+                    "id": "text-color",
+                    "label": "Text Color",
+                    "default": "#000000"
+                }
+            ]
+        },
+        {
+            "name": "Heading-Subheading-Text",
+            "type": "Heading-Subheading-text",
+            "settings": [            
+                {
+                    "type": "richtext",
+                    "id" : "heading",
+                    "label" : "Heading",
+                    "default": "<p></p>"
+                },
+                {
+                    "type": "richtext",
+                    "id" : "subheader",
+                    "label" : "Subheader",
+                    "default": "<p></p>"
+                },
+                {
+                    "type": "richtext",
+                    "id" : "description",
+                    "label" : "Description",
+                    "default": "<p></p>"
+                },
+                {
+                    "type": "range",
+                    "id": "heading-font-size",
+                    "label": "Header Font Size",
+                    "min": 12,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 40
+                },
+                {
+                    "type": "range",
+                    "id": "subheader-font-size",
+                    "label": "Subheader Font Size",
+                    "min": 12,
+                    "max": 50,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 13 
+                },
+                {
+                    "type": "range",
+                    "id": "description-font-size",
+                    "label": "Description Font Size",
+                    "min": 12,
+                    "max": 50,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 16
+                },
+                {
+                    "type": "range",
+                    "id": "line-height",
+                    "min": 10,
+                    "max": 50,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 21,
+                    "label": "Line height"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "border-left",
+                    "label": "Border-left",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "border-right",
+                    "label": "Border-right",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "border-top",
+                    "label": "Border-Top",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "border-bottom",
+                    "label": "Border-Bottom",
+                    "default": false
+                },
+                {
+                    "type": "font",
+                    "id" : "font",
+                    "label": "Font-Family"
+                },
+                {
+                    "type": "range",
+                    "label": "Padding-Right",
+                    "id": "padding-right",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 0
+                },
+                {
+                    "type": "range",
+                    "label": "Padding-Left",
+                    "id": "padding-left",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "px",
+                    "default": 0
+                },
+                {
+                    "type": "range",
+                    "label": "Padding-Top",
+                    "id": "padding-top",
+                    "min": 0,
+                    "max": 120,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 0
+                },
+                {
+                    "type": "color",
+                    "id": "text-color",
+                    "label": "Text Color",
+                    "default": "#000000"
+                }             
+            ]
+        },
+        {
+            "type": "spacer-block",
+            "name": "Spacer",
+            "settings":[
+                {
+                    "type": "range",
+                    "id": "spacer-height",
+                    "label": "Spacer Height",
+                    "min": 0,
+                    "max": 200,
+                    "step": 5,
+                    "unit": "px",
+                    "default": 30
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name":"Three-Column-Blog"
+        }
+    ]
+}
+{% endschema %} 
